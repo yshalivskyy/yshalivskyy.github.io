@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.wrapper {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: inline-block;
+}
+.item {
+  margin-bottom: 30px;
+}
+.editable {
+  border: 1px solid black;
+  padding: 8px;
+}
+textarea, input {
+  width: 100%;
+  height: 5vh;
+}
+code {
+  font-weight: bold;
+}
+label {
+  margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="item">
+      <label>
+        <code>
+          &lt;textarea&gt;&lt;/textarea&gt;
+        </code>
+      </label>
+      <textarea></textarea>
+    </div>
+    <div class="item">
+      <label>
+        <code>
+          &lt;div contenteditable&gt;&lt;/div&gt;
+        </code>
+      </label>
+      <div class="editable" contenteditable></div>
+    </div>
+    <div class="item">
+      <label>
+        <code>
+          &lt;input type="text"/&gt;
+        </code>
+      </label>
+      <input type="text" />
+    </div>
+  </div>
+</body>
+</html>
